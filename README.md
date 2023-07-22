@@ -1,11 +1,24 @@
+About perl-sub-exporter-feedstock
+=================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/perl-sub-exporter-feedstock/blob/main/LICENSE.txt)
+
+
 About perl-sub-exporter
-=======================
+-----------------------
 
 Home: https://github.com/rjbs/Sub-Exporter
 
 Package license: GPL-1.0-or-later OR Artistic-1.0-Perl
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/perl-sub-exporter-feedstock/blob/main/LICENSE.txt)
+Summary: a sophisticated exporter for custom-built routines
+
+About perl-sub-exporter
+-----------------------
+
+Home: https://github.com/rjbs/Sub-Exporter
+
+Package license: GPL-1.0-or-later OR Artistic-1.0-Perl
 
 Summary: a sophisticated exporter for custom-built routines
 
