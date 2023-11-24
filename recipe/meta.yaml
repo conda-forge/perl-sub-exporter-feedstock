@@ -1,6 +1,6 @@
 {% set name = "perl-sub-exporter" %}
-{% set version = "0.990" %}
-{% set sha256 = "bc64ec5a06865f9cc676215c06a9448b3a0c8b3974ffb23a24f8e2ad090544fc" %}
+{% set version = "0.991" %}
+{% set sha256 = "2a95695d35c5d0d5373a7e145c96b9b016113b74e94116835ac05450cae4d445" %}
 
 package:
   name: {{ name }}
