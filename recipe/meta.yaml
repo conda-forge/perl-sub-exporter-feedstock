@@ -4,15 +4,15 @@
 
 package:
   name: {{ name }}
-  version: {{ version }}
+  version: "{{ version }}"
 
 source:
   url: https://cpan.metacpan.org/authors/id/R/RJ/RJBS/Sub-Exporter-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  skip: true  # [win]
-  number: 1
+  noarch: generic
+  number: 2
   script:
     - perl Makefile.PL INSTALLDIRS=vendor
     - make
@@ -33,6 +33,7 @@ requirements:
   run:
     - perl
     - perl-sub-install  # has no run export
+    - perl-data-optlist
 
 test:
   imports:
@@ -43,8 +44,8 @@ about:
   home: https://github.com/rjbs/Sub-Exporter
   license: GPL-1.0-or-later OR Artistic-1.0-Perl
   license_file:
-    - {{ environ["PREFIX"] }}/man/man1/perlartistic.1
-    - {{ environ["PREFIX"] }}/man/man1/perlgpl.1
+    - {{ environ["PREFIX"] }}/lib/perl5/core_perl/pod/perlartistic.pod
+    - {{ environ["PREFIX"] }}/lib/perl5/core_perl/pod/perlgpl.pod
   summary: a sophisticated exporter for custom-built routines
 
 extra:
